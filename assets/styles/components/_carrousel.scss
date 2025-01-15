@@ -1,5 +1,6 @@
 .carrousel{
-    @include flexbox($display: flex, $direction:row, $justify: space-between);
+    @include flexbox($display: flex, $direction:row, $justify: space-between, $wrap: nowrap);
     padding-top: 1em;
     width: $mid-screen;
+    overflow-x: auto;
 }
