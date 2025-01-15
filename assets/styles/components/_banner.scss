@@ -1,0 +1,51 @@
+.banner{
+
+    position: relative;
+
+    &-img{
+        height: auto;
+        max-width: 100%;
+    }
+
+    &-content{
+        position: absolute;
+        top:38%;
+        left: 59%;
+        z-index: 1;
+        background-color: $white;
+        border-radius: $border-radius;
+        padding: 2em 0.8em;
+        max-width: 34em;
+
+        h1{
+            font-size: 2rem;
+            font-weight: bolder;
+            color: $darken;
+            font-family: $font-default;
+        }
+
+        p{
+            font-size: 1rem;
+            color: $primary;
+            margin-top: 0.3em;
+            margin-bottom: 1.2em;
+            font-family: $font-default;
+        }
+
+        a{
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: $darken;
+            color: $white;
+            text-decoration: none;
+            border-radius: $border-radius;
+            font-family: $font-default;
+            transition: transform 0.3s ease-out;
+            
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.03);
+            }
+        }
+    }
+}

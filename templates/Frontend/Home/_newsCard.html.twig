@@ -1,0 +1,11 @@
+{% set mainImage = product|main_image %}
+{% set cheapestVariant = product|resolve_chepeast_variant %}
+{% set priceTTC = priceTTC(cheapestVariant) %}
+<div class="news-card" title="{{product.name}}">
+     <img src="{{asset('Images/products/' ~ mainImage.imageName )}}" alt="">
+     <div class="news-card-content">
+        <span class="news-card-content-name">{{product.name}}</span>
+        <span class="news-card-content-price">A partir de {{priceTTC}} €</span>
+        <span class="news-card-content-model">{{product.model.name}}</span>
+     </div>
+</div> 

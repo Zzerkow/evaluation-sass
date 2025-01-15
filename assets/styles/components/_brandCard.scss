@@ -1,0 +1,36 @@
+.brand-card {
+    @include flexbox($display: flex, $direction: column, $justify: start);
+    background: transparent;
+    border-radius: $border-radius; 
+    width: $card-width;
+    max-width: $card-width;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    img {
+        aspect-ratio: 1 / 1.3;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &-content {
+        @include flexbox($display: flex, $direction: column, $justify: center);
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: $back;
+
+        &-name {
+            font-family: $font-default;
+            color: $primary;
+            font-size: 0.9em;
+            padding: 0.8em 0;
+        }
+    }
+}

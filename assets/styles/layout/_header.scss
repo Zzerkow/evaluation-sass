@@ -1,0 +1,94 @@
+.navbar{
+
+    @include flexbox($display: flex, $direction:row, $justify:center, $align: center);
+    background-color: $white;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    padding: 1em 0;
+
+
+    &-content{
+        @include flexbox($display: flex, $direction:row, $justify: space-between);
+        align-items: center;
+        width: $mid-screen;
+        height: auto;
+
+        &-image{
+            object-fit: cover;
+            transition: transform 0.5s ease; /* Transition douce pour l'animation */
+            transform: rotate(0deg); /* Position initiale */
+
+            &:hover{
+                transform: rotate(180deg); /* Rotation à 180 degrés sur hover */
+            }
+        }
+
+        &-links{
+            @include flexbox($display: flex, $direction:row, $justify: inline-flex, $gap:0.5em);
+            &-item {
+                list-style-type: none;
+                a {
+                    font-family: $font-default;
+                    text-decoration: none;
+                    color: $primary;
+                    font-size: 1rem;
+                    transition: color 0.3s;
+            
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+
+        &-searchbar{
+            display: flex;
+            align-items: center;
+            border: 1px solid $border;
+            border-radius: 5px;
+    
+            input {
+                padding: 0.5rem;
+                width: 25em;
+                color: $darken;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+    
+            button {
+                padding: 0 0.5rem;
+                border: none;
+                border-radius: 0 4px 4px 0;
+                cursor: pointer;
+                background-color: transparent;
+
+                i{
+                    color: $secondary;
+                    font-size: 1.1em;
+                }
+            }
+      }
+    
+      &-buttons{
+        @include flexbox($display: flex, $direction:row, $justify: inline-flex, $gap:0.5em);
+
+        a{
+            i{
+                color: $primary;
+                font-size: 1.1em;
+
+                &:hover{
+                    color: $hover;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+      }
+        
+    }
+
+}

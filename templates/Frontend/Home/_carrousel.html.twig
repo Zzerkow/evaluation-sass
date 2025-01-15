@@ -1,0 +1,5 @@
+<section class="carrousel">
+    {% for model in models %}
+        {% include 'Frontend/Home/_card.html.twig' with { model: model } %}
+    {% endfor %}
+</section>

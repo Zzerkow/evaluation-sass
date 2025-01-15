@@ -1,0 +1,21 @@
+.brand{
+
+  @include flexbox($display: flex, $direction:column, $justify: start, $gap: 0em);
+  width: $mid-screen;
+  height: auto;
+  padding-top: $module-padding;
+  padding-bottom: $module-padding;
+
+  &-title{
+      font-size: 1.8em;
+      font-weight: bolder;
+      font-family: $font-default;
+  }
+
+  &-content{
+      @include flexbox($display: flex, $direction:row, $justify: space-between, $gap: 0em); 
+      width: 100%;
+      height: auto;
+      padding-top: $content-padding; 
+  }
+}

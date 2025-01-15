@@ -1,0 +1,8 @@
+<section class="brand">
+    <span class="brand-title">Nos marques</span>
+    <div class="brand-content">
+        {% for marque in marques  %}
+            {% include 'Frontend/Home/_brandCard.html.twig' with { marque: marque } %}
+        {% endfor %} 
+    </div>
+</section>

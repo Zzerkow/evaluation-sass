@@ -1,0 +1,8 @@
+<section class="news">
+    <span class="news-title">Nouveautés</span>
+    <div class="news-content">
+        {% for product in products  %}
+            {% include 'Frontend/Home/_newsCard.html.twig' with { product: product } %}
+        {% endfor %} 
+    </div>
+</section>

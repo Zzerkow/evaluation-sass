@@ -1,0 +1,28 @@
+ .card{
+    border-radius: $border-radius;
+    padding: 0.3em 0.6em;
+    background: transparent;
+    border: 1px solid $border; 
+    transition: transform 0.3s ease-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    &-content{
+        @include flexbox($display: flex, $direction:row, $justify: start, $gap: 0.5em);
+        align-items: center;
+
+        img{
+            max-width: rem(60); 
+            object-fit: cover;
+        }
+
+        span{
+            font-size: 0.8em;
+            color: $primary;
+            font-family: $font-default;
+        }
+    }
+} 

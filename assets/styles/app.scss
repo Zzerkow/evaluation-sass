@@ -1,0 +1,20 @@
+// Import abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+//Import base
+@import "base/reset";
+//Import layout
+@import "layout/header";
+//Import components
+@import "components/banner";
+@import "components/utils";
+@import "components/carrousel";
+@import "components/card";
+@import "components/news";
+@import "components/newsCard";
+@import "components/brand";
+@import "components/brandCard";
+//Import pages
+//Import Vendors
+@import "vendors/bootstrapIcons";

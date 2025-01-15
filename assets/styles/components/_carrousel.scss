@@ -1,0 +1,5 @@
+.carrousel{
+    @include flexbox($display: flex, $direction:row, $justify: space-between);
+    padding-top: 1em;
+    width: $mid-screen;
+}

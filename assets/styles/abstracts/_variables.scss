@@ -1,0 +1,43 @@
+//Colors
+$text-muted: rgb(108, 117, 125);
+
+$color-palette: (
+    primary: #808080,
+    secondary: #c5c5c5, 
+    darken: #000000,
+    back: #f6f6f6,
+    hover: #3d3d3d,
+    white: #ffffff,
+    border: #d1d1d1,
+);
+
+$primary : map-get($color-palette, primary);
+$secondary : map-get($color-palette, secondary);
+$darken : map-get($color-palette, darken);
+$back : map-get($color-palette, back);
+$hover : map-get($color-palette, hover);
+$white: map-get($color-palette, white);
+$border: map-get($color-palette, border);
+
+//width-screen
+
+$width-percentage: (
+    mid: 90%,
+);
+
+$mid-screen: map-get($width-percentage, mid);
+
+//card-width
+
+$card-width: 23.5%;
+
+//padding
+$module-padding: 2em;
+$content-padding: 1em;
+
+//Border-radius
+$border-radius: 10px;
+$border-radius-full: 999px;
+
+//Font Family
+$font-default: "Poppins", sans-serif;
